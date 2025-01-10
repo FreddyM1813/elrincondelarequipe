@@ -6,7 +6,7 @@
     <title>El Rincón del Arequipe</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f1e4;
@@ -16,22 +16,33 @@
         header {
             background-color: #d1a27e;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
         }
 
         nav {
             display: flex;
             justify-content: center;
             background-color: #a67552;
-            padding: 10px;
+            padding: 15px 0;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-weight: bold;
+            font-size: 1rem;
         }
 
         nav a:hover {
@@ -40,32 +51,50 @@
 
         main {
             padding: 20px;
-            text-align: center;
         }
 
         .about, .products, .contact {
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 20px;
+            margin: 30px auto;
+            max-width: 900px;
+            padding: 30px;
             background-color: white;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        footer {
+        .about {
             text-align: center;
-            background-color: #d1a27e;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
 
-        .products img {
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-item {
+            text-align: center;
+            max-width: 250px;
+        }
+
+        .product-item img {
             width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
+            border-radius: 10px;
+        }
+
+        .product-item h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        .product-item p {
+            font-size: 0.9rem;
+            color: #5a4636;
+        }
+
+        .contact {
+            text-align: center;
         }
 
         .contact form {
@@ -88,10 +117,18 @@
             color: white;
             border: none;
             cursor: pointer;
+            font-size: 1rem;
         }
 
         .contact button:hover {
             background-color: #875a3f;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #d1a27e;
+            color: white;
+            padding: 20px;
         }
     </style>
 </head>
@@ -115,19 +152,19 @@
 
         <section id="products" class="products">
             <h2>Productos</h2>
-            <div>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" alt="Arequipe Clásico">
                 <h3>Arequipe Clásico</h3>
-                <img src="https://via.placeholder.com/300" alt="Arequipe Clásico">
                 <p>El sabor tradicional que amas.</p>
             </div>
-            <div>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1601050693989-4a8980ee40d6" alt="Arequipe con Chocolate">
                 <h3>Arequipe con Chocolate</h3>
-                <img src="https://via.placeholder.com/300" alt="Arequipe con Chocolate">
                 <p>Una combinación irresistible.</p>
             </div>
-            <div>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1570207039348-df3ddede6fbe" alt="Arequipe Light">
                 <h3>Arequipe Light</h3>
-                <img src="https://via.placeholder.com/300" alt="Arequipe Light">
                 <p>El mismo sabor con menos calorías.</p>
             </div>
         </section>
