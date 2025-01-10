@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón del Arequipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f1e4;
+            color: #5a4636;
+        }
+
+        header {
+            background-color: #d1a27e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #a67552;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about, .products, .contact {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #d1a27e;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .products img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact input, .contact textarea, .contact button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact button {
+            background-color: #a67552;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #875a3f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>El Rincón del Arequipe</h1>
+        <p>El lugar perfecto para los amantes del arequipe</p>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#products">Productos</a>
+        <a href="#contact">Contáctanos</a>
+    </nav>
+
+    <main>
+        <section id="about" class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>En <strong>El Rincón del Arequipe</strong>, nos especializamos en ofrecer los más deliciosos productos de arequipe hechos con amor y dedicación. Nuestra misión es endulzar tus momentos especiales.</p>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Productos</h2>
+            <div>
+                <h3>Arequipe Clásico</h3>
+                <img src="https://via.placeholder.com/300" alt="Arequipe Clásico">
+                <p>El sabor tradicional que amas.</p>
+            </div>
+            <div>
+                <h3>Arequipe con Chocolate</h3>
+                <img src="https://via.placeholder.com/300" alt="Arequipe con Chocolate">
+                <p>Una combinación irresistible.</p>
+            </div>
+            <div>
+                <h3>Arequipe Light</h3>
+                <img src="https://via.placeholder.com/300" alt="Arequipe Light">
+                <p>El mismo sabor con menos calorías.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes preguntas o quieres hacer un pedido especial? Escríbenos:</p>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 El Rincón del Arequipe. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
